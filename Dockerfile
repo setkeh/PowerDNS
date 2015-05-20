@@ -24,9 +24,9 @@ CMD /usr/sbin/pdns_server \
 	--launch=gmysql \
 	--gmysql-host=$DB_PORT_3306_TCP_ADDR \
 	--gmysql-port=$DB_PORT_3306_TCP_PORT \
-	--gmysql-user=${DB_ENV_USER:-pdns} \
-	--gmysql-password=${DB_ENV_USER:-pdns} \
-	--gmysql-dbname=${DB_ENV_DB:-pdns} \
+	--gmysql-user=pdns \
+	--gmysql-password=pdns \
+	--gmysql-dbname=pdns \
 	--webserver \
 	--webserver-address=0.0.0.0 \
 	--webserver-port=8053 \
