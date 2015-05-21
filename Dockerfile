@@ -31,4 +31,4 @@ CMD /usr/sbin/pdns_server \
 	--webserver-address=0.0.0.0 \
 	--webserver-port=8053 \
 	--webserver-password=$WEBPASSWD
-EXPOSE 53 8053
+EXPOSE 53 53/udp 8053
